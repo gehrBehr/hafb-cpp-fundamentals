@@ -17,18 +17,16 @@ const int kMax = 12;
 
 int main ()
 {
-   int number = 0;
-   cout << "Enter a value to print multiplication tables: " << endl;
+    int number = 0;
+    cout << "Enter a value to print multiplication tables: " << endl;
     cin >> number;
-
-for (int row = 1; row <= number; ++row)
-{
-    for (int column = 1; column <= kMax; ++column)
+    for (int row = 1; row <= number; ++row)
     {
-        cout << setw(6) << (row * column);
-    }
+        for (int column = 1; column <= kMax; ++column)
+        {
+            cout << setw(6) << (row * column);
+        }
     cout << endl;
-}
+    }
     return 0;
-
 }
