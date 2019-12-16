@@ -5,6 +5,15 @@ using namespace std;
 const float kMetersToInches = 39.37;
 const float kKiloToPound = 2.204;
 const float kBMIImperial = 703;
+const float kLowerNormalBound = 18.5;
+const float kLowerOverweightBound = 25;
+const float kLowerObeaseBound = 30;
+const float kLowerSevereBound = 35;
+const float kLowerVeryBound = 40;
+const float kMorbidlyObese = 45;
+
+
+
 
 
 //Calculate the Body max index of the user.
@@ -32,43 +41,42 @@ int main()
     bmi = (weight_pounds * kBMIImperial) / (height_inches * height_inches);
     cout << "Your BMI(imperial) is: " << bmi << endl;
 
-
-
-    bmi = kilograms / (meters * meters);
-
-
-
+    // let the user know what the number means.
     cout << "You are considered: ";
 
-    if (bmi > 16 &&	bmi < 18.5)
+    if (bmi < kLowerNormalBound)
     {
-        cout << "Underweight" << endl;
+        cout << "Underweight (less than 18.5)" << endl;
     }
-    else if (bmi > 18.5 &&	bmi < 25)
+    else if (bmi > kLowerNormalBound &&	bmi < kLowerOverweightBound)
     {
-        cout << "Normal" << endl;
+        cout << "Normal (between 18.5 and 24.9)" << endl;
     }
-    else if (bmi > 25 &&	bmi < 30)
+    else if (bmi > kLowerOverweightBound &&	bmi < kLowerObeaseBound)
     {
-        cout << "Overweight" << endl;
+        cout << "Overweight (between 25 and 30)" << endl;
     }
-    else if (bmi > 30 &&	bmi < 35)
+    else if (bmi > kLowerObeaseBound &&	bmi < kLowerSevereBound)
     {
-        cout << "Moderately obese" << endl;
+        cout << "Moderately obese (between 30 and 35)" << endl;
     }
-    else if (bmi > 35 &&	bmi < 40)
+    else if (bmi > kLowerSevereBound &&	bmi < kLowerVeryBound)
     {
-        cout << "Severely obese" << endl;
+        cout << "Severely obese (between 35 and 40)" << endl;
     }
-    else if (bmi > 40 &&	bmi < 45)
+    else if (bmi > kLowerVeryBound &&	bmi < kMorbidlyObese)
     {
-        cout << "Very severely obese" << endl;
+        cout << "Very severely obese (between 40 and 45)" << endl;
     }
-    else if (bmi > 50)
+    else if (bmi > kMorbidlyObese)
     {
-        cout << "Morbidly obese" << endl;
+        cout << "Morbidly obese (greater than 45)" << endl;
     }  
-
+    else
+    {
+        cout << "out of range\n";
+    }
+    
 
     return 0;
 }
