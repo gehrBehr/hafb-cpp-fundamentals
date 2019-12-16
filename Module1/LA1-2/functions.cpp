@@ -9,7 +9,6 @@
  * 
  */
 #include "functions.h" //local headers are brought in like this.
-
 /**
  * @brief Example of function definition
  * 

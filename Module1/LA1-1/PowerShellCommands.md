@@ -20,7 +20,7 @@ $ rm <name> # remove/delete file/directory
 ## C++ Basics
 - File extension: `.cpp`
 
-## g++ Compiler
+## g++ Compiler for 1 file
 ```bash
 # To compile
 # -o for output file name
@@ -28,7 +28,19 @@ $ g++ main.cpp -o main
 # To run
 $ ./main.exe
 ```
-
+## g++ Compiler for 2 files
+For example, if you have a library
+under the `functions.cpp` and 
+`functions.h` files, and you have
+ a driver under `run_functions.cpp`
+```bash
+# To compile
+# -o for output file name
+$ g++ functions.cpp run_functions.cpp -o program_name
+# To run
+$ ./program_name.exe
+```
+2 files is max for one line, otherwise use a makefile
 ## C++ File Template
 
 ```cpp
