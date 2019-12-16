@@ -14,8 +14,5 @@ int main()
          << "long " << setw(9) << sizeof(long) << endl // long integers
          << "bool " << setw(9) << sizeof(bool) << endl; //boolean
 
-         
-
-
     return 0;
 }
