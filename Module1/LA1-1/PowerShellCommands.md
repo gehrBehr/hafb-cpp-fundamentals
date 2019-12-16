@@ -1,3 +1,8 @@
+## C++ environment in Windows
+- git //for source control
+- cmake //to work with projects
+- g++ (mingw) //compliler for windows. Make sure it is in the environment variables path.
+- vs code // editor to write code
 ## Terminal Commands 
 Note: ($ means terminal prompt):
 ```bash
@@ -35,4 +40,13 @@ int main()
 {
     return 0;
 }
+```
+
+## Plugins and Doxygen Documentation
+```cpp
+// Add C/C++ Intellisense
+//add code spell
+//add Doxygen Documentation
+//in a file type: /** 
+//hit enter
 ```
