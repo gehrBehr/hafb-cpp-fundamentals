@@ -10,7 +10,18 @@ int main()
     cout << "> ";
     cin >> age;
 
-    cout << "Ahh, you are " << age << ". Very neat.\n" << endl;
+    cout << "Ahh, you are " 
+    << age 
+    << ". Very neat.\n" 
+    << endl
+    <<"ints are" 
+    << sizeof(int) 
+    << "bytes." 
+    << endl
+    << "Min Integer value: " << INT32_MIN 
+    << "Max Integer value: " << INT32_MAX; 
+
+
 
     return 0;
 }
