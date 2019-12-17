@@ -18,6 +18,9 @@
  */
 int main()
 {
-    FactorMod3();
+    FactorMod3 ();
+    FactorModX(7);
+    FactorModXRange(7, 70);
+
     return 0;
 }
