@@ -10,5 +10,5 @@
 using namespace std;
 
 // Function Prototype
-void FactorMod3();
-void BeginFactor();
+void FactorMod3(int);
+void BeginFactorization();

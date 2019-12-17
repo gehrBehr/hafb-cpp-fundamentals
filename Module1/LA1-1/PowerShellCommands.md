@@ -19,6 +19,7 @@ $ rm <name> # remove/delete file/directory
 ```
 ## C++ Basics
 - File extension: `.cpp`
+- Header Files: `.h` or `.hpp`
 
 ## g++ Compiler for 1 file
 ```bash
@@ -41,6 +42,15 @@ $ g++ functions.cpp run_functions.cpp -o program_name
 $ ./program_name.exe
 ```
 2 files is max for one line, otherwise use a makefile
+
+## Makefiles using CMake
+To build a project we need all the rules to be
+set under `CMakeLists.txt` file.
+- create a build folder: `$ mkdir build`
+-Go to the build dir: `$ cd build`
+- Run CMake:`cmake 
+[path to makefile rules] -G "MinGW Makefiles"`
+
 ## C++ File Template
 
 ```cpp
@@ -57,6 +67,7 @@ int main()
 ## Plugins and Doxygen Documentation
 ```cpp
 // Add C/C++ Intellisense
+//Cmake
 //add code spell
 //add Doxygen Documentation
 //in a file type: /** 

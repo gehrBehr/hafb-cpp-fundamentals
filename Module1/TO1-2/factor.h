@@ -1,4 +1,10 @@
 #ifndef FACTOR_H_
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+void FactorMod3();
+
 #define FACTOR_H_
 
 
