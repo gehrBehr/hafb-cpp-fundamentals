@@ -11,6 +11,7 @@ $ cd  <dest># change directories
 $ cd   ..	# .. parent directory 
 $ pwd       # show present working directory
 $ rm <name> # remove/delete file/directory
+$ cp <filepath\filename> newfilename
 ```
 ## File System
 ``` bash
