@@ -21,6 +21,12 @@ int main()
     FactorMod3 ();
     FactorModX(7);
     FactorModXRange(7, 70);
+    unsigned int ourCount = GetFactorModXRange(11,11);
+    cout << "this is the number: " << ourCount << endl;
+
+    auto numberCount = GetFactorModXRange(5,500);
+    cout << "this is the number: " << numberCount << endl;
+
 
     return 0;
 }

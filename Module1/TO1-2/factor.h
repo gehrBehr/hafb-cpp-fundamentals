@@ -9,6 +9,8 @@ using namespace std;
 void FactorMod3();
 void FactorModX(int);
 void FactorModXRange(int, int);
+unsigned int GetFactorModXRange(int mod_number, int range);
+
 
 
 #endif /* !FACTOR_H_ */

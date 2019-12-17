@@ -53,3 +53,18 @@ void FactorModXRange(int mod_number, int range)
     }
     cout << "Result is: " << count << endl;
 }
+
+unsigned int GetFactorModXRange(int mod_number, int range)
+{
+    unsigned int count = 0;
+    
+    for (unsigned int i = 1; i <= range; ++i)
+    {
+        if (i % mod_number == 0)
+        {
+            count++;
+        }  
+    }
+   // cout << "Result is: " << count << endl;
+    return count;
+}
