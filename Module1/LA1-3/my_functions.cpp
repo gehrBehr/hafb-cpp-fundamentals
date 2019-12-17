@@ -42,3 +42,38 @@ void UpdateStep(int &step)
     step++;
     cout << "New step " << step << endl;
 }
+
+int Max2(int num1, int num2)
+{
+
+}
+
+int Max3(int num1, int num2, int num3)
+{
+
+}
+
+int Max10(const array<int,10>& nums)
+{
+  int max = nums[0];
+  for (auto num : nums)
+  {
+    if (max <= num)
+    {
+      max = num;
+    }
+  }
+}
+
+/**
+ * @brief change each temp one by one.
+ * 
+ * @param nums 
+ */
+void ClearElements(array<int,10> &nums)
+{
+  for (int index = 0; index < nums.size(); ++index)
+  {
+    nums[index] = -99;
+  }
+}

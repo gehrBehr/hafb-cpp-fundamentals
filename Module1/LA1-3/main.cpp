@@ -16,6 +16,14 @@ int main()
 
   cout << "Number after UpdateStep(): " << number1 << endl;
 
+  array<int, 10> temperatures = {-12,34,67,0,12,44,99,-8,18,33};
+  ClearElements(temperatures);
+
+  for (auto temp : temperatures)
+  {
+    cout << temp << endl;
+  }
+
 
   return 0;
 }
