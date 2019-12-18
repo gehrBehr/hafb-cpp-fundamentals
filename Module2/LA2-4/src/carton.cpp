@@ -22,3 +22,26 @@ double Carton::width()
 {
     return width_;
 }
+
+void Carton::set_length(double length)
+{
+    length_ = length;
+}
+
+void Carton::set_width(double width)
+{
+    width_ = width;
+}
+
+void Carton::set_height(double height)
+{
+    height_ = height;
+}
+
+void Carton::ShowInfo()
+{
+  std::cout << "Box Height: " << height() << std::endl;
+  std::cout << "Box Length: " << length() << std::endl;
+  std::cout << "Box Width: " << width() << std::endl;
+ 
+}

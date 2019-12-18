@@ -26,6 +26,14 @@ public:
     double height();
     double width();
 
+    //Setters
+    void set_length(double length);
+    void set_height(double height);
+    void set_width(double width);
+
+    //other methods
+    void ShowInfo();
+
     // ~Carton();
 };
 
