@@ -20,16 +20,16 @@ private:
 public:
     //constructor: build/create your object.
     Carton();
-    
+    Carton(double length, double width, double height); 
     //Getters //convention states that 
     double length();
-    double height();
     double width();
+    double height();
 
     //Setters
     void set_length(double length);
-    void set_height(double height);
     void set_width(double width);
+    void set_height(double height);
 
     //other methods
     void ShowInfo();

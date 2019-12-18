@@ -7,6 +7,14 @@ Carton::Carton()
     length_ = 0;
 }
 
+//second constructor
+Carton::Carton(double length, double width, double height)
+{
+    length_ = length;
+    width_ = width;
+    height_ = height;
+}
+
 //functions that are part of a class are called methods.
 double Carton::length()
 {
@@ -43,5 +51,4 @@ void Carton::ShowInfo()
   std::cout << "Box Height: " << height() << std::endl;
   std::cout << "Box Length: " << length() << std::endl;
   std::cout << "Box Width: " << width() << std::endl;
- 
 }
