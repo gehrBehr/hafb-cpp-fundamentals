@@ -7,7 +7,7 @@ const float kKiloToPound = 2.204;
 const float kBMIImperial = 703;
 const float kLowerNormalBound = 18.5;
 const float kLowerOverweightBound = 25;
-const float kLowerObeaseBound = 30;
+const float kLowerObeseBound = 30;
 const float kLowerSevereBound = 35;
 const float kLowerVeryBound = 40;
 const float kMorbidlyObese = 45;
@@ -52,11 +52,11 @@ int main()
     {
         cout << "Normal (between 18.5 and 24.9)" << endl;
     }
-    else if (bmi > kLowerOverweightBound &&	bmi < kLowerObeaseBound)
+    else if (bmi > kLowerOverweightBound &&	bmi < kLowerObeseBound)
     {
         cout << "Overweight (between 25 and 30)" << endl;
     }
-    else if (bmi > kLowerObeaseBound &&	bmi < kLowerSevereBound)
+    else if (bmi > kLowerObeseBound &&	bmi < kLowerSevereBound)
     {
         cout << "Moderately obese (between 30 and 35)" << endl;
     }

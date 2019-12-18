@@ -65,12 +65,9 @@ int main()
 }
 ```
 
-## Plugins and Doxygen Documentation
-```cpp
-// Add C/C++ Intellisense
-//Cmake
-//add code spell
-//add Doxygen Documentation
-//in a file type: /** 
-//hit enter
-```
+## Plugins for VSCode Used 
+
+- Add C/C++ Intellisense
+- CMake 
+- Code spell
+- Doxygen Documentation
