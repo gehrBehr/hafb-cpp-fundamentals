@@ -78,11 +78,6 @@ void Carton::ShowInfo()
   
 }
 
-double Carton::Volume() const
-{
-    return length_ * width_ * height_;
-}
-
 void Carton::SetMeasurements(double length, double width, double height)
 {
     if (length <= 0 || width <= 0 || height <=0)
@@ -96,3 +91,16 @@ void Carton::SetMeasurements(double length, double width, double height)
         height_ = height;
     }
 }
+
+double Carton::Volume() const
+{
+    return length_ * width_ * height_;
+}
+
+//capture output in an outstream
+void Carton::WriteData(std::ostream& out) const
+{
+    out << length_ << "," << width_ << ","
+    << height_ << Volume() << "," << std::endl;
+}
+
