@@ -9,8 +9,16 @@
 #define CARTON_H_
 #include <iostream>
 #include <string>
+#include <array>
 
-//create your first class
+
+/**
+ * @brief Carton is a basic class to represent a cube of
+ * varied dimensions.
+ * @param length
+ * @param width
+ * @param height
+ */
 class Carton
 {
 private:
@@ -18,6 +26,12 @@ private:
     double width_;
     double height_;
 public:
+    //Static Constants
+    // static const double kMaxSize;
+    static const double kMinLength;
+    static const double kMinWidth;
+    static const double kMinHeight;
+
     //constructor: build/create your object.
     Carton();
     Carton(double length, double width, double height); 
@@ -32,9 +46,12 @@ public:
     void set_height(double height);
 
     //other methods
+    void SetMeasurements(double length, double width, double height);
     void ShowInfo();
+    double Volume() const;
 
-    // ~Carton();
+    //destructor
+    ~Carton();
 };
 
 
