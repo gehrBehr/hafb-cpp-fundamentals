@@ -1,9 +1,12 @@
-#include <iostream>
 #include "distance.h"
-using namespace std;
+
 
 // Main Function
 int main() 
 {
+
+  Distance commute(5586, 25);
+  commute.ShowDist();
+
   return 0;
 }
