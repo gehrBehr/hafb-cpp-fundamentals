@@ -39,7 +39,7 @@ const std::array<Carton, kMaxArraySize>& cartons, int rec_num)
 
     //TODO: check for writing error.
 
-    file_out << "Length,Width,Height,Volume";
+    //file_out << "Length,Width,Height\n";
 
     for (int index = 0; index < rec_num; ++index)
     {
