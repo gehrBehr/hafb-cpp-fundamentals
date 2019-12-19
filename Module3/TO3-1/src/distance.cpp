@@ -44,8 +44,8 @@ std::ostream& operator <<(std::ostream& os, const Distance& distance)
     return os;
 }
 
-
-void update_distance(int ft, float in)
+void Distance::update_distance(int ft, float in)
 {
-
+    set_feet(ft);
+    set_inches(in);
 }
