@@ -3,7 +3,14 @@
 
 void Distance::ShowDist() const
 {
-    std::cout << feet() << "\'- " << inches() << "\"" << std::endl;
+    std::cout << feet() << "\' " << inches() << "\"" << std::endl;
+}
+
+Distance::Distance(const Distance& rhs) // Copy Constructor
+{
+    std::cout << "Copy contructor invoked" << std::endl;
+    feet_ = rhs.feet_;
+    inches_ = rhs.inches_;
 }
 
 Distance Distance::operator + (Distance rhs) const
@@ -18,11 +25,22 @@ Distance Distance::operator + (Distance rhs) const
     return temp;
 }
 
-Distance Distance::operator - (Distance rhs) const
+Distance Distance::operator = (Distance& rhs)
+{
+    std::cout << "Assignment operator invoked" << std::endl;
+
+    feet_ = rhs.feet_;
+    inches_ = rhs.inches_;
+
+    return Distance(feet_, inches_);
+}
+
+//friend of the class but not a member directly.
+Distance operator - (Distance lhs, Distance rhs) 
 {
     float rhsInches = rhs.inches_ + (rhs.feet_ * 12.0);
 
-    float lhsInches = inches_ + (feet_ * 12.0);
+    float lhsInches = lhs.inches_ + (lhs.feet_ * 12.0);
 
     float temp = lhsInches - rhsInches;
 

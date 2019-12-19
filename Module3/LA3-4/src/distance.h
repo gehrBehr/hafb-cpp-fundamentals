@@ -20,7 +20,7 @@ private:
 public:
     Distance() : feet_(0), inches_(0){}
     Distance(int feet, float inches) : feet_(feet), inches_(inches){}
-
+    Distance(const Distance& dist); // Copy Constructor
     ~Distance(){}
     //Getters and Setters.
     int feet()const {return feet_;}
@@ -32,7 +32,9 @@ public:
     void ShowDist() const;
     Distance operator + (Distance rhs) const;
     friend std::ostream& operator <<(std::ostream& os, const Distance& distance); //return a reference to an output stream.
-    Distance operator - (Distance rhs) const;
+//    Distance operator - (Distance rhs) const;
+    friend Distance operator - (Distance lhs, Distance rhs); //friend operator.
+    Distance operator = (Distance& rhs);
 
     void update_distance(int ft, float in);
     //compare objects
