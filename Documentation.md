@@ -55,9 +55,8 @@ set under `CMakeLists.txt` file.
 ## C++ File Template
 
 ```cpp
-#include <iomanip>
 #include <iostream>
-using namespace std;
+#include "headerfile.h"
 
 int main()
 {
@@ -65,10 +64,15 @@ int main()
 }
 ```
 
+## Notes:
+Current naming conventions as discussed in class:
+ 
+
 ## Plugins for VSCode Used 
 
-- Add C/C++ Intellisense
-- CMake 
-- Code spell
-- Doxygen Documentation
-- EPITECH C/C++ Headers
+- Add C/C++ Intellisense (ms-vscode.cpptools)
+- CMake (twxs.cmake)
+- Code spell (streetsidesoftware.code-spell-checker)
+- Doxygen Documentation Generator (cschlosser.doxdocgen)
+- EPITECH C/C++ Headers (nicolaspolomack.epitech-c-cpp-headers)
+- Excel Viewer (grapecity.gc-excelviewer)

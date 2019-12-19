@@ -9,6 +9,7 @@
 #define DISTANCE_H_
 #include <iostream>
 #include <array>
+#include <math.h>
 
 class Distance
 {
@@ -29,6 +30,9 @@ public:
     void set_inches(float inches){inches_ = inches;}
     // other methods
     void ShowDist() const;
+    Distance operator + (Distance rhs) const;
+    friend std::ostream& operator <<(std::ostream& os, const Distance& distance); //return a reference to an output stream.
+
 };
 
 #endif /* !DISTANCE_H_ */
