@@ -33,6 +33,10 @@ public:
     Distance operator + (Distance rhs) const;
     friend std::ostream& operator <<(std::ostream& os, const Distance& distance); //return a reference to an output stream.
 
+  
+    Distance operator - (Distance rhs) const;
+
+    void update_distance(int ft, float in);
 };
 
 #endif /* !DISTANCE_H_ */

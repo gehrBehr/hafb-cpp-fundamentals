@@ -29,10 +29,12 @@ public:
     void set_feet(int feet){feet_ = feet;}
     void set_inches(float inches){inches_ = inches;}
     // other methods
+
     void ShowDist() const;
     Distance operator + (Distance rhs) const;
     friend std::ostream& operator <<(std::ostream& os, const Distance& distance); //return a reference to an output stream.
 
+//
 };
 
 #endif /* !DISTANCE_H_ */
